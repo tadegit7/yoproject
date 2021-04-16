@@ -14,7 +14,11 @@ const routes: Routes = [
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
+  },  {
+    path: 'note-entery',
+    loadChildren: () => import('./note-entery/note-entery.module').then( m => m.NoteEnteryPageModule)
   },
+
 ];
 
 @NgModule({

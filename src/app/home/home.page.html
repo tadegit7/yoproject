@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Inbox
+      Inbox <ion-button [routerLink]="['/note-entery']" style="float:right;">New</ion-button>
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -16,6 +16,7 @@
       <ion-title size="large">
         Inbox
       </ion-title>
+      <ion-button [routerLink]="['/message/:id']" style="float:right">New</ion-button>
     </ion-toolbar>
   </ion-header>
   
